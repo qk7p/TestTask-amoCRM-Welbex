@@ -1,0 +1,1 @@
+export {OfferBlock as default} from "./OfferBlock"

@@ -1,0 +1,32 @@
+@import "../../styles/";
+
+.Button {
+  $this: &;
+  padding: 25px 25px;
+  height: max-content;
+  width: max-content;
+  color: $color-light-text;
+  background-color: $color-button-primary;
+  @include inter-16-medium;
+  border: none;
+  outline: transparent;
+  transition: all 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba($color-button-primary, 0.8);
+  }
+
+  &#{$this}__disabled {
+    color: grey;
+    background-color: darkgray;
+    border-color: darkgray;
+    cursor: default;
+
+    &:hover {
+      color: darkgray;
+      background-color: darkgray;
+      border-color: darkgray;
+    }
+  }
+}

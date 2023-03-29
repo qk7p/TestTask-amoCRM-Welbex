@@ -1,0 +1,20 @@
+@import "../../styles/index";
+
+.Header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-between;
+  margin-top: 45px;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: 320px) {
+    background-color: black;
+    margin-top: 0;
+  }
+
+  &Menu {
+    flex: 1;
+  }
+}

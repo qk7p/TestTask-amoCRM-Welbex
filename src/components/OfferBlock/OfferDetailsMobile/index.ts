@@ -1,0 +1,1 @@
+export {OfferDetailsMobile as default} from "./OfferDetailsMobile"

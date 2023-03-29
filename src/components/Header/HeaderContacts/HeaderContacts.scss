@@ -1,0 +1,24 @@
+@import "../../../styles/index";
+
+.HeaderContacts {
+  display: flex;
+  padding: 15px;
+  a {
+    cursor: pointer;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  .IconButton {
+    fill: $color-light-text;
+    margin-left: 25px;
+    &:hover {
+      fill: #fff;
+    }
+  }
+  @media screen and (max-width: 320px) {
+    display: none;
+  }
+}

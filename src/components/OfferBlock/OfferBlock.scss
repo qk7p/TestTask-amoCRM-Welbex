@@ -1,0 +1,127 @@
+@import "../../styles/index";
+
+.OfferBlock {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 94px 0 0 0;
+
+  &-GradientOfferText {
+    background-image: $color-offer-text-gradient;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+
+  &-GradientOfferDetailText {
+    background-image: $color-offer-detail-text-gradient;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+
+  h1 {
+    @include inter-48-regular;
+    margin: 0;
+  }
+
+  h2 {
+    @include inter-48-black;
+    margin: 0;
+  }
+  .Offer {
+    p {
+      @include montserrat-18-regular;
+    }
+    &Details {
+      p {
+        @include montserrat-16-regular;
+      }
+    }
+  }
+
+  .OfferDetails {
+    max-width: 330px;
+    text-align: end;
+
+    &Container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      margin-bottom: 60px;
+    }
+
+    &HeaderText {
+      @include inter-18-bold;
+      text-transform: uppercase;
+    }
+    h3 {
+      @include inter-18-medium;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+    p {
+      margin: 0;
+      @include montserrat-16-regular;
+    }
+
+    .Button {
+      padding: 25px 35px;
+    }
+  }
+
+  @media screen and (max-width: 320px) {
+    margin-top: 40px;
+
+    h1 {
+      @include inter-36-regular;
+    }
+
+    h2 {
+      @include inter-36-black;
+    }
+
+    .OfferDetails {
+      text-align: start;
+      h3 {
+        text-transform: none;
+        margin-bottom: 13px;
+      }
+      &HeaderText {
+        text-transform: lowercase;
+        letter-spacing: 0;
+      }
+      &Container {
+        margin-top: 20px;
+        padding-left: 15px;
+        margin-bottom: 41px;
+      }
+
+      &Item {
+        text-transform: uppercase;
+        margin-bottom: 14px;
+        position: relative;
+        p {
+          @include montserrat-13-regular;
+        }
+
+        &::before {
+          display: block;
+          position: absolute;
+          left: -15px;
+          top: 50%;
+          content: "";
+          width: 10px;
+          border: 1px solid transparent;
+          border-image: $color-offer-detail-text-gradient;
+          border-image-slice: 1;
+        }
+      }
+      .Button {
+        display: none;
+      }
+    }
+  }
+}

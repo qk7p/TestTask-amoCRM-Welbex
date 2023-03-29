@@ -1,0 +1,16 @@
+@import "../../styles/index";
+
+.Footer {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  flex-wrap: wrap;
+  width: 100%;
+  &Menu {
+    flex: 1;
+  }
+  @media screen and (max-width: 320px) {
+    flex-direction: column;
+    background-color: black;
+  }
+}

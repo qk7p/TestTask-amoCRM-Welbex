@@ -1,0 +1,33 @@
+@import "../../../styles/index";
+
+.HeaderMenu {
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  a {
+    margin-right: 30px;
+    @include inter-16-medium;
+    cursor: pointer;
+
+    &:hover {
+      color: #fff;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  @media screen and (max-width: 320px) {
+    padding: 20px 8px;
+    justify-content: space-around;
+
+    a {
+      @include inter-12-medium;
+      margin-right: 0;
+
+      &:last-child {
+        display: none;
+      }
+    }
+  }
+}

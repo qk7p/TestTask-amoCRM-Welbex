@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Montserrat:ital,wght@0,400;1,300&display=swap");
+
+@mixin inter-12-medium {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 15px;
+}
+
+@mixin inter-16-medium {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 19px;
+}
+
+@mixin inter-18-medium {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 22px;
+}
+
+@mixin inter-48-black {
+  font-family: "Inter", sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+  font-style: normal;
+  line-height: 58px;
+}
+
+@mixin inter-36-black {
+  font-family: "Inter", sans-serif;
+  font-size: 36px;
+  font-weight: 900;
+  font-style: normal;
+  line-height: 44px;
+}
+
+@mixin inter-14-bold {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 17px;
+  letter-spacing: 1px;
+}
+
+@mixin inter-18-bold {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 22px;
+  letter-spacing: 1px;
+}
+
+@mixin inter-48-regular {
+  font-family: "Inter", sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 58px;
+}
+
+@mixin inter-16-regular {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 19px;
+}
+
+@mixin inter-36-regular {
+  font-family: "Inter", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 44px;
+}
+
+@mixin montserrat-18-regular {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 22px;
+}
+
+@mixin montserrat-16-regular {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 20px;
+}
+
+@mixin montserrat-13-regular {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 16px;
+}
+
+@mixin montserrat-12-regular {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 15px;
+}
+
+@mixin montserrat-10-light {
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 12px;
+}

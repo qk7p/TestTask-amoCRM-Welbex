@@ -1,0 +1,23 @@
+@import "../../styles/index";
+
+.Copyright {
+  align-self: flex-end;
+  text-align: end;
+
+  @include montserrat-12-regular;
+  a {
+    text-decoration: underline;
+    cursor: pointer;
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  @media screen and (max-width: 320px) {
+    width: 100%;
+    align-self: flex-start;
+    text-align: start;
+    padding: 15px 15px 60px 15px;
+    background-color: black;
+  }
+}

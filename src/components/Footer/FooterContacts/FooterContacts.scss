@@ -1,0 +1,40 @@
+@import "../../../styles/index";
+
+.FooterContacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 10px;
+  p {
+    margin-bottom: 20px;
+    color: $color-solid-text;
+    @include inter-14-bold;
+    text-transform: uppercase;
+  }
+  a {
+    margin-bottom: 10px;
+    cursor: pointer;
+    @include inter-16-regular;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .IconBar {
+    margin: 20px 0;
+  }
+
+  svg {
+    width: 20px;
+    height: 20px;
+    fill: $color-light-text;
+    &:hover {
+      fill: #fff;
+    }
+  }
+
+  @media screen and (max-width: 320px) {
+    padding: 15px;
+    align-items: flex-start;
+    margin-bottom: 50px;
+  }
+}

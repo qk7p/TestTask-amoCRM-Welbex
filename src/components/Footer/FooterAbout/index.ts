@@ -1,0 +1,1 @@
+export {FooterAbout as default} from "./FooterAbout"

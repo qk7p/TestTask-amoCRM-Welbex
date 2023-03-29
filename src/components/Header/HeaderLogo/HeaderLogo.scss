@@ -1,0 +1,28 @@
+@import "../../../styles/index";
+
+.HeaderLogo {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 25px 4px 15px;
+  max-width: 160px;
+
+  &IconButton.IconButton {
+    svg {
+      width: 140px;
+      height: 24px;
+      fill: $color-light-text;
+
+      &:hover {
+        fill: #fff;
+      }
+    }
+  }
+
+  p {
+    @include montserrat-10-light;
+    margin: 10px 0 5px 0;
+  }
+  @media screen and (max-width: 320px) {
+    display: none;
+  }
+}
